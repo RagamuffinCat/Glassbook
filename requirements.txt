@@ -1,0 +1,2 @@
+# only for scripts/check_feasibility.py
+websockets>=14

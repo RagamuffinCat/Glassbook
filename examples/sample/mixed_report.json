@@ -1,0 +1,136 @@
+{
+ "mixed_run": "MIX-20260923T124458Z-ceacc0",
+ "run_id": "20260923T031345Z-6cd673",
+ "status": "ok",
+ "end_ms": 1790133227054,
+ "design": "union of userFills (non-TWAP, singletons) and slices (TWAP, metaorders); the source overlap check passes when the two sources share no tid and both have fills inside the window",
+ "generated": "2026-09-23T13:09:15+00:00",
+ "n_twap_labeled": 0,
+ "note": "3 random-layer accounts taken from the full release. Counts are for these 3 accounts only.",
+ "n_wallets_ok": 3,
+ "n_fills": 733,
+ "n_zero_hash": 285,
+ "source_overlap_states": {
+  "pass": 3
+ },
+ "zero_hash_by_dir": {
+  "Open Long": 55,
+  "Open Short": 96,
+  "Buy": 19,
+  "Spot Dust Conversion": 2,
+  "Sell": 21,
+  "Close Short": 29,
+  "Close Long": 63
+ },
+ "zero_hash_crossed": {
+  "False": 283,
+  "True": 2
+ },
+ "wallets": [
+  {
+   "wallet": "w_4ab0b8eb2ac12a89",
+   "sampling": "random",
+   "state": "ok",
+   "n_fills": 15372,
+   "t_first_ms": 1733397126964,
+   "t_last_ms": 1787933869893,
+   "n_twap_labeled": 0,
+   "twap_earliest_ms": 1785452024035,
+   "window_start_ms": 1785452624035,
+   "source_overlap": {
+    "state": "pass",
+    "n_fills": 15372,
+    "n_twap": 192,
+    "overlap": 0,
+    "n_twap_in_window": 171,
+    "n_fills_in_window": 192,
+    "window": [
+     1785452624035,
+     1790133227054
+    ],
+    "n_zero_hash": 229,
+    "zero_hash_by_dir": {
+     "Open Long": 46,
+     "Open Short": 81,
+     "Buy": 18,
+     "Spot Dust Conversion": 1,
+     "Sell": 12,
+     "Close Short": 25,
+     "Close Long": 46
+    },
+    "zero_hash_crossed": {
+     "False": 228,
+     "True": 1
+    }
+   }
+  },
+  {
+   "wallet": "w_3eecfce5da628e62",
+   "sampling": "random",
+   "state": "ok",
+   "n_fills": 2698,
+   "t_first_ms": 1720877916763,
+   "t_last_ms": 1790112433919,
+   "n_twap_labeled": 0,
+   "twap_earliest_ms": 1787303818036,
+   "window_start_ms": 1787304418036,
+   "source_overlap": {
+    "state": "pass",
+    "n_fills": 2698,
+    "n_twap": 397,
+    "overlap": 0,
+    "n_twap_in_window": 395,
+    "n_fills_in_window": 88,
+    "window": [
+     1787304418036,
+     1790133227054
+    ],
+    "n_zero_hash": 8,
+    "zero_hash_by_dir": {
+     "Open Long": 5,
+     "Open Short": 3
+    },
+    "zero_hash_crossed": {
+     "False": 8
+    }
+   }
+  },
+  {
+   "wallet": "w_13f8b6ff978943d0",
+   "sampling": "random",
+   "state": "ok",
+   "n_fills": 1634,
+   "t_first_ms": 1760060089283,
+   "t_last_ms": 1789979595886,
+   "n_twap_labeled": 0,
+   "twap_earliest_ms": 1787455484032,
+   "window_start_ms": 1787456084032,
+   "source_overlap": {
+    "state": "pass",
+    "n_fills": 1634,
+    "n_twap": 148,
+    "overlap": 0,
+    "n_twap_in_window": 143,
+    "n_fills_in_window": 453,
+    "window": [
+     1787456084032,
+     1790133227054
+    ],
+    "n_zero_hash": 48,
+    "zero_hash_by_dir": {
+     "Spot Dust Conversion": 1,
+     "Sell": 9,
+     "Open Long": 4,
+     "Close Long": 17,
+     "Open Short": 12,
+     "Buy": 1,
+     "Close Short": 4
+    },
+    "zero_hash_crossed": {
+     "True": 1,
+     "False": 47
+    }
+   }
+  }
+ ]
+}
